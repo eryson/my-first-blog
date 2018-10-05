@@ -2,7 +2,7 @@
 
 {% block content %}
     <a class="btn btn-default" href="{% url 'post_list' %}"><span class="glyphicon glyphicon-chevron-left"></span></a>
-    <h1>Edit Post</h1>
+    <h1>New Post</h1>
     <form method="POST" class="post-form">
         {% csrf_token %}
         {{ form.as_p }}
